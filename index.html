@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Sunwing Airlines</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: white;
+            color: #333;
+        }
+
+        .header {
+            padding: 24px 10%;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-weight: 900;
+            font-size: 32px;
+            color: black;
+            display: inline-block;
+            text-decoration: underline #FFD700 4px;
+        }
+
+        nav {
+            float: right;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 32px;
+            font-weight: 300;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 10%;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 24px;
+            color: black;
+        }
+
+        .search-box {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+            margin: 40px auto;
+            max-width: 800px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        input, select {
+            padding: 14px;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            flex: 1;
+            font-weight: 300;
+        }
+
+        button {
+            background: #FFD700;
+            color: black;
+            border: none;
+            padding: 16px 48px;
+            border-radius: 8px;
+            font-weight: 900;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+
+        .popular-flights {
+            padding: 40px 10%;
+        }
+
+        h2 {
+            font-weight: 900;
+            margin-bottom: 32px;
+            font-size: 28px;
+        }
+
+        .flight-card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .flight-route {
+            font-weight: 900;
+            font-size: 20px;
+        }
+
+        .flight-price {
+            color: #FFD700;
+            font-weight: 900;
+            font-size: 24px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 32px;
+            border-top: 2px solid #eee;
+            margin-top: 60px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <span class="logo">SUNWING</span>
+        <nav>
+            <a href="#">Бронирование</a>
+            <a href="#">Спецпредложения</a>
+            <a href="#">Поддержка</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Откройте мир<br>с новыми высотами</h1>
+        <div class="search-box">
+            <div class="input-group">
+                <select>
+                    <option>Откуда</option>
+                    <option>Москва (SVO)</option>
+                    <option>Санкт-Петербург (LED)</option>
+                </select>
+                <select>
+                    <option>Куда</option>
+                    <option>Дубай (DXB)</option>
+                    <option>Париж (CDG)</option>
+                    <option>Токио (HND)</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <input type="date" placeholder="Туда">
+                <input type="date" placeholder="Обратно">
+            </div>
+            <button>Найти рейсы →</button>
+        </div>
+    </div>
+
+    <div class="popular-flights">
+        <h2>Популярные направления</h2>
+        <div class="flight-card">
+            <span class="flight-route">Москва → Дубай</span>
+            <span class="flight-price">от 25 000 ₽</span>
+        </div>
+        <div class="flight-card">
+            <span class="flight-route">Санкт-Петербург → Париж</span>
+            <span class="flight-price">от 18 500 ₽</span>
+        </div>
+        <div class="flight-card">
+            <span class="flight-route">Москва → Токио</span>
+            <span class="flight-price">от 42 300 ₽</span>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>✈️ Безопасные перелеты с 2024 | 8 (800) 555-35-35 | support@sunwing.ru</p>
+    </footer>
+</body>
+</html>
